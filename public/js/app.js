@@ -30,15 +30,18 @@ function parseJSON(res) {
 
 function updateArticle(data) {
   console.log(data);
-  const article = data.response.docs[0];
-  const title = article.headline.main;
-  const snippet = article.snippet;
-
-  let li = document.createElement('li');
-  li.className = 'articleClass';
-  li.innerHTML = snippet;
-
-  responseContainerFetch.appendChild(li);
+  const article = data.response.docs;
+  console.log(article);
+  article.forEach(function(element) {
+    const title = element.headline.main;
+    const snippet = element.snippet;
+  
+    let li = document.createElement('li');
+    li.className = 'articleClass';
+    li.innerHTML = snippet;
+  
+    responseContainerFetch.appendChild(li);
+  });
 }
 
 function displayErrors(err) {
