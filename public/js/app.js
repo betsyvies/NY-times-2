@@ -29,9 +29,8 @@ function parseJSON(res) {
 }
 
 function updateArticle(data) {
-  console.log(data);
   const article = data.response.docs;
-  console.log(article);
+  
   article.forEach(function(element) {
     const title = element.headline.main;
     const snippet = element.snippet;
