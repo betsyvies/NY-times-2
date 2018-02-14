@@ -8,7 +8,7 @@ formFetch.addEventListener('submit', function(e) {
   /* Extraemos el valor del input */
   responseContainerFetch.innerHTML = '';
   let searchedForTextFetch = searchFieldFetch.value;
-  const url = `http://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForTextFetch}&api-key=347d672874fd431eb13860e1a3f4d50b`;
+  const url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForTextFetch}&api-key=347d672874fd431eb13860e1a3f4d50b`;
 
   fetch(url)
     .then(handleErrors)
