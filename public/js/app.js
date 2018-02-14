@@ -35,12 +35,27 @@ function updateArticle(data) {
   article.forEach(function(element) {
     const title = element.headline.main;
     const snippet = element.snippet;
+    const imgUrl = element.multimedia[2].url;
   
-    let li = document.createElement('li');
-    li.className = 'articleClass';
-    li.innerHTML = snippet;
+    let h1 = document.createElement('h1');
+    let img = document.createElement('img');
+    let text = document.createElement('p');
+    let div = document.createElement('div');
+
+    text.className = 'articleClass';
+    img.className = 'imgClass';
+    h1.className = 'title';
+    div.className = 'container';
+
+    text.innerHTML = snippet;
+    img.setAttribute('src', imgUrl);
+    h1.innerHTML = title; 
+
+    div.appendChild(h1);
+    div.appendChild(img);
+    div.appendChild(text);
   
-    responseContainerFetch.appendChild(li);
+    responseContainerFetch.appendChild(div);
   });
 }
 

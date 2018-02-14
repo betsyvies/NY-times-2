@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+  text-align: center;
 }
 
 .container-ajax {
@@ -46,12 +47,27 @@ h1 {
 
 /* Style for article section*/
 
-ul {
+.container {
   text-align: center;
   font-size: 2rem;
+  border: 1px solid #000;
+  margin-bottom: 2rem;
+}
+
+.title {
+  width: 100%;
+}
+
+.imgClass {
+  /* width: 40%; */
+  display: inline-block;
+  margin-right: 2rm;
 }
 
 .articleClass {
+  width: 60%;
   margin-bottom: 2rem;
   list-style: none;
+  margin-left: auto;
+  margin-right: auto;
 }
