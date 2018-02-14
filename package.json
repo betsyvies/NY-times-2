@@ -1,0 +1,14 @@
+{
+  "name": "ny-times",
+  "version": "1.0.0",
+  "description": "Ver noticias del NY times",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Betsy Vidal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

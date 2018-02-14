@@ -1,0 +1,57 @@
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container-ajax {
+  display: flex;
+}
+
+.ajax {
+  display: inline-block;
+}
+
+/* Style for News Section */
+
+.masthead {
+  width: 100vw;
+  height: 20rem;;
+  background: #ffc107;
+  text-align: center;
+  margin-bottom: 8rem;
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 5rem;
+}
+
+.contaniner {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.input-value {
+  margin-right: 2rem;
+}
+
+/* Style for article section*/
+
+ul {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.articleClass {
+  margin-bottom: 2rem;
+  list-style: none;
+}

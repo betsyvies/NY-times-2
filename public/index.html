@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NY times</title>
+  <!-- Import Font Google-->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i" rel="stylesheet">
+  <!-- Import Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Import Bootstrap.css-->
+  <link type="text/css" rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <section class="container-ajax">
+    <section class="ajax">
+      <!-- News Section -->
+      <header class="masthead">
+        <h1>¿Qué te interesa hoy?</h1>
+        <div class="site-container">
+          <form id="search-form-fetch" class="form-inline contaniner">
+            <input id="search-keyword-fetch" class="form-control col-xs-4 col-lg-4 input-value" type="text" name="search-keyword" placeholder="e.g.Android"
+              required>
+            <input id="submit-btn-fetch" class="btn btn-info submit" type="submit" value="Submit">
+          </form>
+        </div>
+      </header>
+      <!-- Article Sections -->
+      <div class="site-container">
+        <ul id="response-container-fetch"></ul>
+      </div>
+    </section>
+  </section>
+
+  <!-- Import jQuery and Bootstrap.js -->
+  <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
