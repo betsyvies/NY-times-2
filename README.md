@@ -25,5 +25,5 @@
 
 - Vista Mobile
 
-![NY-times](assets/images/NY-times.png)
+![NY-times](public/assets/images/NY-times.png)
 
