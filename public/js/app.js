@@ -11,7 +11,7 @@ formFetch.addEventListener('submit', function(e) {
   const url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForTextFetch}&api-key=347d672874fd431eb13860e1a3f4d50b`;
 
   fetch(url)
-    .then(handleErrors)
+    .then(handleErrors) // Si todo esta bien corre el programa, sino saldra el error
     .then(parseJSON)
     .then(updateArticle)
     .catch(displayErrors);
@@ -29,6 +29,7 @@ function parseJSON(res) {
 }
 
 function updateArticle(data) {
+  console.log(data);
   const article = data.response.docs;
   
   article.forEach(function(element) {
@@ -47,7 +48,7 @@ function updateArticle(data) {
     div.className = 'container';
 
     text.innerHTML = snippet;
-    img.setAttribute('src', imgUrl);
+    img.setAttribute('src', 'https://static01.nyt.com/' + imgUrl);
     h1.innerHTML = title; 
 
     div.appendChild(h1);
